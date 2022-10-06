@@ -1,0 +1,174 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+a:link, a:active, a:visited{
+    color: #315e8a;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+/*grid 960px*/
+.linha{
+    width: 960px;  /*largura do conteúdo do site*/
+    margin: 0 auto;   /* 0 em cime e em baixo e automático nos lados para ficar centralizado*/
+    overflow: auto;    /* gerencia o conteúdo que fica fora das linhas*/
+    padding: 5px 0;   /* espassamento na parte de baixo e na parte de cima das linhas*/
+}
+.coluna{
+    padding:0 10px;
+    float: left;   /* para todas as colunas flutuarem à esquerda*/
+}
+.col1{
+    width: 60px;   /* largura da coluna*/
+}
+.col2{
+    width: 140px;   /* de 80 em 80 , largura de 60 da coluna mais 20 de espaço entre uma e outra para todos */
+}
+.col3{
+    width: 220px;
+}
+.col4{
+    width: 300px;
+}
+.col5{
+    width: 380px;
+}
+.col6{
+    width: 460px;
+}
+.col7{
+    width: 540px;
+}
+.col8{
+    width: 620px;
+}
+.col9{
+    width: 700px;
+}
+.col10{
+    width: 780px;
+}
+.col11{
+    width: 860px;
+}
+.col12{
+    width: 940px;
+}
+/*estilos reutilisaveis*/
+.sem-padding{
+    padding: 0 !important;
+}
+.sem-margin{
+    margin: 0 !important;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: 500;
+    margin: 15px 0 10px 0;
+}
+ul li, ol li{
+    margin-bottom: 5px;      /* margem de baixo*/
+}
+ul.inline li, ol.inline li{
+    display: inline;   /* para deixar a lista em linha */
+    margin-right: 15px;   /*  deixa um distanciamento em pixel entre os itens da lista */
+}
+ul.inline li:last-child, ol.inline li:last-child{    /* last-child serve para nao deixar distanciamento no ultimo item da lista */
+    margin-right: 0;
+}
+ul.sem-marcador, ol.sem-marcador{
+    list-style: none;   /* serve para eliminar o marcador " as bolinhas ou numeros " nos itens listados */
+}
+a.botao, input.botao{
+    background: #1f3c58;
+    padding: 5px 10px;
+    border-radius: 3px ;   /* para arredondar os cantos do botao */
+    color: #ebebeb ;
+    cursor: pointer;   /* ao passar o mouse sobre o botao muda a seta para uma maozinha */
+    margin: 5px 0;   /*  em cima e em baixo de 5px e esquerda e direita de o px */
+    display: inline-block;   /* mostrar em linha mas em bloco */
+    border: none;  /*   pra nao ter borda nos botoes */
+}
+a.botao:hover, input.botao:hover{   /* para dar o efeito de quando o mouse passar sobre o botao */
+    background: #315e8a;
+    text-decoration: none;
+}
+img{
+    max-width: 100% ;
+    height: auto;
+}
+/*   layout do site */
+.header{
+    background: #dee3e6;
+}
+h1.logo{
+    font-weight: 300;   /* para não ficar tão negrito*/
+    color: #315e8a;
+    letter-spacing: -2px;   /* esoassamento entre as letras*/
+}
+.conteudo-extra{
+    background: #f1f2ea;
+}
+.footer{
+    background: #1f3c58;
+    color: #ebebeb;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: 100;
+}
+.menu{
+    text-transform: uppercase;   /*para ficar tudo com letras maisculas*/
+    text-align: right;   /* para o texto ficar todo a direita*/
+    margin-top: 25px;
+}
+.menu li a{
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+.menu li a:hover{
+    text-decoration: none;
+    background: #1f3c58;
+    color: #ebebeb;
+}
+ul.noticias li{
+    clear: both;   /* para limpar a sflutuações */
+    display: block;
+    overflow: hidden; /* ocultar conteudo excedente */
+    margin-bottom: 20px;
+}
+ul.noticias li img{   /* para configurar todas as imagens de dentro das li's */
+    width: 70px;   /* largura */
+    height: auto;   /*autura*/
+    margin-right: 10px;   /* margem do lado direito */
+    float: left;   /* para flutuar do lado esquerdo */
+}
+ul.noticias li h4{
+    margin: -2px 0 5px 0;
+    font-weight: 500;   /* para não ficar muito negrito */
+}
+ul.noticias p{
+    margin: 5px 0;
+    font-weight: 300;
+}
+ul.noticias li p a{
+    font-weight: 500;
+}
+.contato label{
+    display: block;
+    font-size: 13px;
+    font-weight: 300;
+}
+.contato input, .contato textarea{
+    display: block;
+    margin-bottom: 15px;
+    padding: 5px 2%;    /* % para ficar certinho o padding com a largura indiferente da largura da coluna */
+    width: 96%;   /* % para ficar certinho o padding com a largura indiferente da largura da coluna */
+}
+.contato textarea{
+    height: 150px;    
+}
+.contato input.botao{
+    width: auto;   /* largura fica automatica para os botões */
+}
+
